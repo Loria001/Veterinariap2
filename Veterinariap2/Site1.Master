@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Veterinariap2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="estilos.css" rel="stylesheet" />
+    <title>VETERINARIA C&J</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+     <h1>Veterinaria C&J<img src="Care.png" alt="Logo" style="height: 91px; width: 112px;"></h1>
+    <form id="form1" runat="server">
+       
+        <div>
+            <ul>
+                <li><a href="INICIO.aspx">INICIO</a></li>
+                
+                <li class="dropdown">
+                    <a class="dropbtn">REPORTES</a>
+                    <div class="dropdown-content">
+                        <a href="REPORTESUSUARIOS.aspx">REPORTE USUARIOS</a>
+                        <a href="REPORTESMASCOTAS.aspx">REPORTES MASCOSTAS</a>
+                        <a href="REPORTESCITAS.aspx">REPORTES CITAS</a>       
+                    </div>                    
+                </li>
+                <li><a href="SALIR.aspx">SALIR</a></li>
+            </ul>
+
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
