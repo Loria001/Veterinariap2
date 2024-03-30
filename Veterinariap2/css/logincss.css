@@ -1,0 +1,37 @@
+﻿/* Estilo para los TextBox */
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Estilo para el Button */
+.login-box input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+    /* Cambio de color al pasar el ratón por encima del Button */
+    .login-box input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+/* Estilo para el Label */
+.login-box label {
+    display: block;
+    margin-bottom: 6px;
+    color: #333;
+    font-size: 16px;
+}
